@@ -24,7 +24,7 @@ app.use(cookieParser());
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "https://cuv-spark-frontend.vercel.app/", credentials: true }));
 
 app.use("/api/auth", authRouter);
 app.use("/api/name", nameRouter);

@@ -8,7 +8,7 @@ export const createName = async (req, res) => {
   }
 
   const { name } = req.body;
-  const userId = req.user._id; // ✅ This won't break if `req.user` is null
+  const userId = req.user._id; 
 
   if (!name) {
     return res.status(400).json({ success: false, message: "Name is required" });
